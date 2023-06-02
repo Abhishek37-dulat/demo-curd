@@ -13,6 +13,7 @@ const MONGO_URI = process.env.MD;
 
 app.use(express.json());
 app.use(cors());
+
 app.use("/", userRoute);
 
 mongoose.connect(MONGO_URI);
